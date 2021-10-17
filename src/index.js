@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import AA,{Val} from './App';
+import Farqsiz,{Student as Shuningdek} from './Student';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Farqsiz/>
+    <Shuningdek/>
   </React.StrictMode>,
   document.getElementById('root')
 );
