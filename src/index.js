@@ -1,19 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-// import AA,{Val} from './App';
-import Farqsiz,{Student as Shuningdek} from './Student';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+// import ReactHooks from "./components/Masulotlar/index.jsx";
+import "./index.css";
+// import Buyurtmalar from "../src/components/Buyurtmalar/Index";
+// import ReactOld from "./components/Masulotlar/Test";
+import App from "./App.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Farqsiz/>
-    <Shuningdek/>
+    <App />
+    {/* <Buyurtmalar /> */}
+    {/* <ReactHooks /> */}
+    {/* <ReactOld /> */}
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// <div> ss</div>   this.props.children
+// <div name="sss" />  bunde div yoniga uzgaruvchi  this.props.name
