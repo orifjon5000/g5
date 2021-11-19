@@ -1,11 +1,19 @@
 import React from "react";
 import { Container, Item } from "./Style";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
+const isActive = ({ isActive }) => {
+  return {
+    color: isActive ? "yellow" : "black",
+  };
+};
 export const Navbar = () => {
   return (
     <Container>
       <Item>
-        <Link to="/home">HOme</Link>
+        <NavLink style={isActive} to="/home">
+          HOme
+        </NavLink>
       </Item>
       <Item>
         <Link to="/about">About</Link>

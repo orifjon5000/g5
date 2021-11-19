@@ -5,10 +5,12 @@ import "./index.css";
 // import Buyurtmalar from "../src/components/Buyurtmalar/Index";
 // import ReactOld from "./components/Masulotlar/Test";
 import App from "./App.jsx";
-
+import { Context } from "./Context";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Context>
+      <App />
+    </Context>
     {/* <Buyurtmalar /> */}
     {/* <ReactHooks /> */}
     {/* <ReactOld /> */}

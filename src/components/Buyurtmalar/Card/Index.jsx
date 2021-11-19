@@ -3,12 +3,12 @@ import { Container, User } from "./Style";
 
 class Card extends PureComponent {
   render() {
-    const { id, name, surname, status, user } = this.props.value;
+    const { id, name, surname, status, user, index } = this.props.value;
     const { onDelete } = this.props;
     console.log(this.props.active);
     return (
       <Container>
-        <User.Title size={"id"}>{id} </User.Title>
+        <User.Title size={"id"}>{this.props.index} </User.Title>
         <User.Title>{name} </User.Title>
         <User.Title>{surname} </User.Title>
         <User.Title>{status} </User.Title>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactHooks from "./index.jsx";
+import ReactHooks from "./Index.js";
 
 class ReactOld extends Component {
   constructor(props) {
